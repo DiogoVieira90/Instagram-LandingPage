@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.column-left {
+    width: 50%;
+}
+
+.column-left img {
+    height: 80vh;
+}
+
+.column-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.column-right .group .logo-insta {
+    height: 3rem;
+}
+
+.img-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-profile img {
+    height: 6rem;
+}
+
+.insta-button {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.insta-remove {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(168, 168, 168);
+}
+
+.link-color {
+    color: #0095f6;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url(img/gplay.png);
+}
+
+.app-download:nth-child(2) {
+    background-image: url(img/appstore.png);
+}
+
+@media (max-width: 1024px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 658px) {
+    body {
+        background-color: #fff;
+    }
+    .column-left {
+        display: none;
+    }
+
+    .column-right {
+        width: 100%;
+    }
+    .group {
+        border: 0;
+    }
+}
